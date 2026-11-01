@@ -1,0 +1,9 @@
+.DS_Store
+.claude/
+
+# Full-size source artwork — the site uses the optimized copies in assets/img
+/keepon/
+/steer/
+/coinsta/
+/oloweb_black.png
+/oloweb_white.png
