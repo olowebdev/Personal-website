@@ -367,6 +367,32 @@ button {
 
 .project__text p + p { margin-top: 1em; }
 
+.project__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 44px;
+  margin-top: 1.5em;
+  padding-inline: 20px 16px;
+  border-radius: 999px;
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--line);
+  color: var(--ink);
+  font-weight: 500;
+  transition: background-color .25s, transform .5s var(--ease);
+}
+
+.project__link svg {
+  width: 18px;
+  height: 18px;
+  transition: transform .5s var(--ease);
+}
+
+@media (hover: hover) {
+  .project__link:hover { transform: translateY(-2px); }
+  .project__link:hover svg { transform: translate(2px, -2px); }
+}
+
 .project__media {
   grid-column: 1 / -1;
   margin-top: clamp(32px, 4vw, 52px);
